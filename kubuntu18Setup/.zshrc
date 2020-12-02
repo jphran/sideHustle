@@ -102,18 +102,18 @@ alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Sourcing
-source /opt/ros/noetic/setup.zsh
+source /opt/ros/melodic/setup.zsh
 source ~/sarcos_ws/devel/setup.zsh
 
 # setup sarcos env
 # setup env
 #
 GAZEBO_MODEL_PATH=:/home/$USER/px4/Tools/sitl_gazebo/models
-LD_LIBRARY_PATH=/home/$USER/catkin_ws/devel/lib:/home/$USER/sarcos_ws/devel/lib:/opt/ros/noetic/lib:/home/user/px4/build/px4_sitl_default/build_gazebo
+LD_LIBRARY_PATH=/home/$USER/catkin_ws/devel/lib:/home/$USER/sarcos_ws/devel/lib:/opt/ros/melodic/lib:/home/user/px4/build/px4_sitl_default/build_gazebo
 TZ=America/Denver
-ROS_ETC_DIR=/opt/ros/noetic/etc/ros
-CMAKE_PREFIX_PATH=/home/$USER/catkin_ws/devel:/home/$USER/sarcos_ws/devel:/opt/ros/noetic
-ROS_ROOT=/opt/ros/noetic/share/ros
+ROS_ETC_DIR=/opt/ros/melodic/etc/ros
+CMAKE_PREFIX_PATH=/home/$USER/catkin_ws/devel:/home/$USER/sarcos_ws/devel:/opt/ros/melodic
+ROS_ROOT=/opt/ros/melodic/share/ros
 ROS_MASTER_URI=http://localhost:11311
 ROS_VERSION=1
 PX4_HOME_ALT=1297
@@ -121,11 +121,12 @@ PX4_HOME_LON=-112.68420
 PX4_HOME_LAT=40.70194
 ROS_PYTHON_VERSION=2
 GAZEBO_PLUGIN_PATH=:/home/$USER/px4/build/px4_sitl_default/build_gazebo
-PYTHONPATH=/home/$USER/catkin_ws/devel/lib/python2.7/dist-packages:/home/$USER/sarcos_ws/devel/lib/python2.7/dist-packages:/opt/ros/noetic/lib/python2.7/dist-packages
-ROS_PACKAGE_PATH=/home/$USER/catkin_ws/src:/home/$USER/sarcos_ws/src:/opt/ros/noetic/share:/home/$USER/px4/Tools/sitl_gazebo:/home/$USER/px4
+PYTHONPATH=/home/$USER/catkin_ws/devel/lib/python2.7/dist-packages:/home/$USER/sarcos_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages
+ROS_PACKAGE_PATH=/home/$USER/catkin_ws/src:/home/$USER/sarcos_ws/src:/opt/ros/melodic/share:/home/$USER/px4/Tools/sitl_gazebo:/home/$USER/px4
 ROSLISP_PACKAGE_DIRECTORIES=/home/$USER/catkin_ws/devel/share/common-lisp:/home/$USER/sarcos_ws/devel/share/common-lisp
-PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-PKG_CONFIG_PATH=/home/$USER/catkin_ws/devel/lib/pkgconfig:/home/$USER/sarcos_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig
-ROS_DISTRO=noetic
-
-
+PATH=/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PKG_CONFIG_PATH=/home/$USER/catkin_ws/devel/lib/pkgconfig:/home/$USER/sarcos_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig
+ROS_DISTRO=melodic
+PATH=$PATH:/home/$USER/.local/bin:/home/$USER//.local/lib/python2.7/site-packages
+ROSCONSOLE_FORMAT='[${severity}] [${time}] [${logger}]: ${message}'
+ROS_CONSOLE_OUTPUT=screen

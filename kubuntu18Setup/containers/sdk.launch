@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--        ===============================================================================-->
+<!--        Updated 2020-09-21 -->
+<!--        Proprietary Information of Sarcos Group LC.-->
+<!--        Copyright (C) 2020 Sarcos Group LC. - All Rights Reserved Worldwide-->
+<!--        Unauthorized copying of this file, via any medium is strictly prohibited-->
+
+<!--        Data Rights:-->
+<!--        Prime Contract No. FA 8750-19-C-0040-->
+<!--        Subcontractor Name:  Sarcos Group LC, DBA Sarcos LC-->
+<!--        Subcontractor Address:  360 Wakara Way, Salt Lake City, UT 84108-1214-->
+
+<!--        This Computer Software is provided to the Government pursuant to the Special-->
+<!--        License Rights as set forth in Modification 7 dated June 29, 2020 ("MOD 7")-->
+<!--        to the Subcontract Agreement with Black River Systems (Subcontract No. 1905-S11)-->
+<!--        dated September 11, 2019. The Government's rights to use modify, reproduce,-->
+<!--        release, perform, display or disclose technical data or computer software-->
+<!--        marked with this legend are subject to the terms set forth in MOD 7.-->
+
+<!--        This System includes commercial items and commercial software.-->
+<!--        ===============================================================================-->
+<launch>
+    <node pkg="dji_sdk" type="dji_sdk_node" name="dji_sdk" output="screen">
+    <!-- node parameters -->
+    <param name="serial_name" type="string" value="/dev/ttyUSB0"/>
+    <param name="baud_rate" type="int" value="921600"/>
+    <param name="app_id" type="int" value="1043920"/>
+    <param name="app_version" type="int" value="1"/>
+    <param name="align_time" type="bool" value="false"/>
+    <param name="enc_key" type="string" value="116bc7e3e06deb7bcee73fd51b9c8a5a5f8e7c5e277f54206aa8dcf46e87718c"/>
+    <param name="use_broadcast" type="bool" value="false"/>
+    </node>
+</launch>
+
+
