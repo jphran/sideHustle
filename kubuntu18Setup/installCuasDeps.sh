@@ -47,8 +47,8 @@ sudo apt -y --no-install-recommends install build-essential \
         ros-$ROS_DISTRO-rostest \
         ros-$ROS_DISTRO-rosunit \
         ros-$ROS_DISTRO-xacro  \
-	ros-$ROS_DISTRO-gazebo9* \
-	ros-$ROS_DISTRO-mav* \
+	"ros-$ROS_DISTRO-gazebo9*" \
+	"ros-$ROS_DISTRO-mav*" \
 	rsync \
         socat \
         ssh \
