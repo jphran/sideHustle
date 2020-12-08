@@ -47,8 +47,8 @@ sudo apt -y --no-install-recommends install build-essential \
         ros-$ROS_DISTRO-rostest \
         ros-$ROS_DISTRO-rosunit \
         ros-$ROS_DISTRO-xacro  \
-	ros-$ROS_DISTRO-gazebo9* \
-	ros-$ROS_DISTRO-mav* \
+	"ros-$ROS_DISTRO-gazebo9*" \
+	"ros-$ROS_DISTRO-mav*" \
 	rsync \
         socat \
         ssh \
@@ -66,11 +66,12 @@ sudo geographiclib-get-geoids egm96-5
 pip install --upgrade pip && pip install px4tools pymavlink rosdep numpy toml
 pip3 install --upgrade pip && pip3 install setuptools wheel rosdep pyulog "matplotlib==3.0.*" pre-commit
 
-rosdep init && rosdep update
+sudo rosdep init && rosdep update
 
 # custom dusty DJI SDK
+pushd . 
+cd ~
 git clone -b 3.8.2 https://github.com/dustycodes/Onboard-SDK.git && mkdir -p /home/$USER/Onboard-SDK/build
-pushd .
 cd ~/Onboard-SDK/build
 cmake .. \
     && make -j $(nproc) \

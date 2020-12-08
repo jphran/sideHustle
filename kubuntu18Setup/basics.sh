@@ -7,6 +7,8 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install vim -y
 sudo apt install snapd
+sudo apt install -y xclip
+sudo apt install -y htop
 
 # spotify
 snap install spotify
