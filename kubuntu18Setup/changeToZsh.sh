@@ -2,7 +2,7 @@
   
 # change shell
 sudo apt install -y zsh
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 # NOTE: needed restart right here, idk if its necessary
 
 echo "Restarting computer to load zsh in ... "
@@ -12,4 +12,4 @@ do
 	sleep 1
 done
 
-sudo shutdown -r
+sudo shutdown -r now
